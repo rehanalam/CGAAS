@@ -128,8 +128,8 @@ function getCalculate(input, callback)
 
     var input = [];
         input['operation'] = Object.keys(Operation Type)[0];
-        input['x'] = 171.347078700246;
-        input['y'] = 171.347078700246;
+        input['x'] = 229.783371065177;
+        input['y'] = 229.783371065177;
 
     controller.getCalculate(input, function(error, response, context) {
 
