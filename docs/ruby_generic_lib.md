@@ -119,10 +119,10 @@ collect = Hash.new
 operation = Calc::OperationTypeEnum::SUM
 collect['operation'] = operation
 
-x = 239.938844118704
+x = 153.617657189545
 collect['x'] = x
 
-y = 239.938844118704
+y = 153.617657189545
 collect['y'] = y
 
 
