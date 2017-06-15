@@ -4,8 +4,9 @@ Simple calculator API hosted on APIMATIC
 
 
 
-## Server Configuration for Base URLs
+## Base URL
 
+The Base URL for this API is `http://examples.apimatic.io/apps/calculator`
 
 
 
@@ -33,15 +34,15 @@ Simple calculator API hosted on APIMATIC
 #### Query Parameters
 | Parameter | Type | Tags | Description | Example |
 |-----------|------| ---- |-------------| ------- |
-| x | `precision` |  ``` Required ```  | The LHS value | `128.153127300624` | 
-| y | `precision` |  ``` Required ```  | The RHS value | `128.153127300624` | 
+| x | `precision` |  ``` Required ```  | The LHS value | `148.256108310659` | 
+| y | `precision` |  ``` Required ```  | The RHS value | `148.256108310659` | 
 
 #### Responses
 **200** 
 
 Body (_precision_) 
 ```
-86.4299540740577
+148.256108310659
 ```
 
 
@@ -52,7 +53,7 @@ Body (_CouldNotCompute_)
 ```
 {
   "ServerMessage": "ServerMessage",
-  "ServerCode": 86
+  "ServerCode": 148
 }
 ```
 

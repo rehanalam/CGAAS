@@ -83,6 +83,8 @@ Import the reference to the generated SDK files inside your html file like:
 		<!-- Helper files -->
 		<script src="scripts/calclib/Module.js"></script>
 		<script src="scripts/calclib/Configuration.js"></script>
+		<script src="scripts/calclib/ModelFactory.js"></script>
+		<script src="scripts/calclib/ObjectMapper.js"></script>
 		<script src="scripts/calclib/APIHelper.js"></script>
 		<script src="scripts/calclib/Http/Client/HttpContext.js"></script>
 		<script src="scripts/calclib/Http/Client/RequestClient.js"></script>
@@ -90,6 +92,7 @@ Import the reference to the generated SDK files inside your html file like:
 		<script src="scripts/calclib/Http/Response/HttpResponse.js"></script>
 
 		<!-- API Controllers -->
+        <script src="scripts/calclib/Controllers/BaseController.js"></script>
         <script src="scripts/calclib/Controllers/SimpleCalculatorController.js"></script>
 
 
@@ -101,6 +104,7 @@ Import the reference to the generated SDK files inside your html file like:
 	</head>
 ```
 > The `Module.js` file should be imported before the other files. After `Module.js`, `Configuration.js` should be imported.
+> The `ModelFactory.js` file is needed by `ObjectMapper.js` file. The `ObjectMapper` in turn, is needed by `BaseController.js`.
 
 ### 7. Including link to `app.js` in HTML file
 Link your `app.js` file to your `index.html` file like:
@@ -202,8 +206,8 @@ function getCalculate(input)
 	app.controller("testController", function($scope, SimpleCalculatorController){
         var input = [];
         input['operation'] = Object.keys(OperationTypeEnum)[0];
-        input['x'] = 145.935004402853;
-        input['y'] = 145.935004402853;
+        input['x'] = 157.147046861773;
+        input['y'] = 157.147046861773;
 
 
 		var result = SimpleCalculatorController.getCalculate(input);
